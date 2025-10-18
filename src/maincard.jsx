@@ -86,8 +86,17 @@ function Maincard({ handleFollow, handleSendMessage }) {
             }}
           />
         </div>
-        <h3 style={{ color: "white", textWrap: "wrap" }}>About Me</h3>
-        <p>
+        <h3
+          style={{
+            color: "white",
+            textWrap: "wrap",
+            fontFamily: "Inter, sans-serif",
+          }}
+        >
+          About Me
+        </h3>
+        <br></br>
+        <p style={{ fontFamily: "Inter, sans-serif", lineHeight: "1.6" }}>
           I am a passionate Front-End Developer with a strong foundation in
           JavaScript and React, building interactive and visually appealing web
           applications. I enjoy creating clean, user-friendly interfaces and
