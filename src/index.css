@@ -1,0 +1,431 @@
+/* Prevent body scrolling and center content */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("./assets/mountain.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  gap: 20px;
+
+  /* Force hardware acceleration for smoother scrolling */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Center the first card initially */
+.wrapper::before {
+  content: "";
+  flex: 0 0 calc(50vw - 175px - 10px);
+  height: 1px;
+}
+
+.wrapper::after {
+  content: "";
+  flex: 0 0 calc(50vw - 175px - 10px);
+  height: 1px;
+}
+
+.wrapper > * {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 8px;
+  border: none;
+  border-radius: 10px;
+  width: 350px;
+  height: 600px;
+  padding: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  /*background-color: rgba(0, 0, 0, 0.8);  Black with 50% opacity */
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  flex-shrink: 0;
+  overflow-y: auto;
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+/* Hide scrollbar but keep functionality */
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Rest of your existing styles remain the same */
+.container p {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.profilePicture {
+  background-color: rgba(228, 226, 226, 0.25);
+  backdrop-filter: blur(10px);
+  height: 120px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+.profileimage:active {
+  transform: scale(1.2);
+}
+
+.profileimage {
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.addfrndbutton {
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(18, 18, 99);
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.addfrndbutton:hover {
+  background-color: rgb(37, 37, 106);
+}
+
+.addfrndbutton:active {
+  background-color: rgb(18, 18, 99);
+}
+
+.sendmsgbtn {
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(27, 89, 58);
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.sendmsgbtn:hover {
+  background-color: rgb(7, 97, 54);
+}
+
+.sendmsgbtn:active {
+  background-color: rgb(27, 89, 58);
+}
+
+.threedots {
+  margin-top: 20px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container p {
+  margin: 0;
+  padding: 0;
+}
+
+.edu-details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.tech-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 28px;
+  margin: 20px;
+}
+
+.download-resume-button-div {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  z-index: 10;
+  border-top: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scrollable-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 70px; /* Space for the fixed button */
+}
+
+.skill-description {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.project-list {
+  background-color: rgba(228, 226, 226, 0.25);
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.project-buttons {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.code-button {
+  background-color: blue;
+  height: 35px;
+  width: 80px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.run-button {
+  background-color: green;
+  height: 35px;
+  width: 130px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.loading-scrn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 9999; /* Ensure it's on top of everything */
+}
+
+.gradient-text {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #00c3ff, #7d2ae8, #ff007f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+.instruction-screen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 180px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 8px;
+  border-radius: 8px;
+  z-index: 10000; /* Very high z-index to ensure it's above everything */
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.close-button {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+/* Add these styles to your CSS file */
+
+.shimmer-button {
+  position: relative;
+  overflow: hidden;
+  color: black;
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.shimmer-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Optional: Add hover effect */
+.shimmer-button:hover {
+  background-color: #ffd700; /* Slightly darker gold on hover */
+}
+
+.shimmer-button:active {
+  transform: scale(0.95); /* Reduce size to 95% */
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.project-heading {
+  background: linear-gradient(90deg, #0ff, #9f00ff, #ff3ecf, #00f3ff);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 4s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/****************************************************/
+/* Hover animations */
+
+/****************************************************/
+@media (min-width: 769px) {
+  /* Your desktop styles here */
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .container {
+    width: 350px;
+    height: 600px;
+  }
+
+  .threedots {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 348px !important;
+  }
+}
