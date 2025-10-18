@@ -3,7 +3,10 @@ function Instructionscreen({ handleInstructionClose }) {
     <div className="instruction-screen">
       <div className="close-button">
         <button onClick={handleInstructionClose} className="closebtn">
-          <i class="fa-solid fa-square-xmark"></i>
+          <i
+            class="fa-solid fa-square-xmark"
+            style={{ fontSize: "20px", color: "white" }}
+          ></i>
         </button>
       </div>
       <div className="instructions">

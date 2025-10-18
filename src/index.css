@@ -401,6 +401,12 @@ body {
     background-position: 0% 50%;
   }
 }
+
+.closebtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 /****************************************************/
 /* Hover animations */
 
