@@ -455,6 +455,13 @@ body {
 .icons-and-names p {
   font-family: "Inter", sans-serif;
 }
+
+.my-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /****************************************************/
 /* Hover animations */
 

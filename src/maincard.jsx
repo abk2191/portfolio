@@ -1,6 +1,6 @@
 import myimage from "./assets/me.jpg";
 
-function Maincard({ handleFollow, handleSendMessage }) {
+function Maincard({ handleFollow, handleSendMessage, handleShowProfilePic }) {
   return (
     <div className="container">
       {/* Scrollable Content */}
@@ -16,6 +16,7 @@ function Maincard({ handleFollow, handleSendMessage }) {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
+              onClick={handleShowProfilePic}
               className="profileimage"
             />
           </div>

@@ -5,11 +5,21 @@ import Maincard from "./maincard";
 import { motion } from "framer-motion";
 import Loadingscreen from "./loadingscreen";
 import Instructionscreen from "./instructionscreen";
+import Profilepic from "./profilepic";
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [instructionOpen, setInstructionOpen] = useState(false);
+  const [profilePicVisible, setProfilePicVisible] = useState(false);
+
+  const handleShowProfilePic = () => {
+    setProfilePicVisible(true);
+  };
+
+  const handleCloseProfilePic = () => {
+    setProfilePicVisible(false);
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -241,6 +251,10 @@ function App() {
               handleInstructionClose={handleInstructionClose}
             />
           )}
+          {profilePicVisible && (
+            <Profilepic handleCloseProfilePic={handleCloseProfilePic} />
+          )}
+
           <div className="wrapper" onScroll={handleScroll}>
             <motion.div
               initial={{ opacity: 0, x: 50 }}
@@ -251,6 +265,7 @@ function App() {
               <Maincard
                 handleFollow={handleFollow}
                 handleSendMessage={handleSendMessage}
+                handleShowProfilePic={handleShowProfilePic}
               />
             </motion.div>
 
