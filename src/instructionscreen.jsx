@@ -14,21 +14,19 @@ function Instructionscreen({ handleInstructionClose }) {
           style={{
             color: "white",
             fontFamily: "Inter, sans-serif",
-            lineHeight: "1.6",
           }}
         >
           <i class="fa-solid fa-lightbulb" style={{ color: "yellow" }}></i>{" "}
-          Swipe left or right to reveal all cards.
+          SWIPE LEFT OR RIGHT TO REVEAL ALL CARDS.
         </p>
         <p
           style={{
             color: "white",
             fontFamily: "Inter, sans-serif",
-            lineHeight: "1.6",
           }}
         >
           <i class="fa-solid fa-lightbulb" style={{ color: "yellow" }}></i>{" "}
-          Scroll on cards to see all details.
+          SCROLL ON CARDS TO SEE ALL DETAILS.
         </p>
       </div>
     </div>
