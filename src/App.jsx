@@ -17,10 +17,6 @@ function App() {
     setProfilePicVisible((prev) => !prev);
   };
 
-  const handleCloseProfilePic = () => {
-    setProfilePicVisible(false);
-  };
-
   useEffect(() => {
     setTimeout(() => {
       setInstructionOpen(true); // Show instructions after loading
@@ -251,9 +247,7 @@ function App() {
               handleInstructionClose={handleInstructionClose}
             />
           )}
-          {profilePicVisible && (
-            <Profilepic handleCloseProfilePic={handleCloseProfilePic} />
-          )}
+          {profilePicVisible && <Profilepic />}
 
           <div className="wrapper" onScroll={handleScroll}>
             <motion.div

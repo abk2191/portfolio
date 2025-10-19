@@ -12,11 +12,11 @@ function Profilepic({ handleCloseProfilePic }) {
           width: "220px",
           borderRadius: "20px",
           border: "4px solid rgba(255, 255, 255, 0.15)",
+          backdropFilter: "blur(10px)",
           margin: "0 auto",
           zIndex: "9999",
           cursor: "pointer",
         }}
-        onClick={handleCloseProfilePic}
       />
     </div>
   );
