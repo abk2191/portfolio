@@ -84,14 +84,86 @@ function Secondcard({ handleFollow, handleSendMessage, handleDownloadResume }) {
           <i className="fa-solid fa-code" style={{ color: "red" }}></i>Tech
           Skills:
         </h3>
-        <div className="tech-icons">
-          <i className="fa-brands fa-react" style={{ color: "aqua" }}></i>
-          <i className="fa-brands fa-square-js" style={{ color: "yellow" }}></i>
-          <i className="fa-brands fa-html5" style={{ color: "orange" }}></i>
-          <i className="fa-brands fa-css3-alt" style={{ color: "blue" }}></i>
-          <i className="fa-solid fa-microchip" style={{ color: "red" }}></i>
-          <i className="fa-brands fa-git-alt" style={{ color: "blue" }}></i>
-          <i className="fa-brands fa-node-js" style={{ color: "yellow" }}></i>
+        <div className="tech-icons-container">
+          <div className="tech-icons">
+            {/* First set */}
+            <div className="icons-and-names">
+              <i className="fa-brands fa-react" style={{ color: "aqua" }}></i>
+              <p style={{ color: "white", fontSize: "12px" }}>React</p>
+            </div>
+            <div className="icons-and-names">
+              <i
+                className="fa-brands fa-square-js"
+                style={{ color: "yellow" }}
+              ></i>
+              <p style={{ color: "white", fontSize: "12px" }}>JavaScript</p>
+            </div>
+            <div className="icons-and-names">
+              <i className="fa-brands fa-html5" style={{ color: "orange" }}></i>
+              <p style={{ color: "white", fontSize: "12px" }}>HTML5</p>
+            </div>
+            <div className="icons-and-names">
+              <i
+                className="fa-brands fa-css3-alt"
+                style={{ color: "blue" }}
+              ></i>
+              <p style={{ color: "white", fontSize: "12px" }}>CSS3</p>
+            </div>
+            <div className="icons-and-names">
+              <i className="fa-solid fa-microchip" style={{ color: "red" }}></i>
+              <p style={{ color: "white", fontSize: "12px" }}>AI</p>
+            </div>
+            <div className="icons-and-names">
+              <i className="fa-brands fa-git-alt" style={{ color: "blue" }}></i>
+              <p style={{ color: "white", fontSize: "12px" }}>GIT</p>
+            </div>
+            <div className="icons-and-names">
+              <i
+                className="fa-brands fa-node-js"
+                style={{ color: "yellow" }}
+              ></i>
+              <p style={{ color: "white", fontSize: "12px" }}>Node JS</p>
+            </div>
+
+            {/* Duplicate set ONLY */}
+            <div className="icons-and-names">
+              <i className="fa-brands fa-react" style={{ color: "aqua" }}></i>
+              <p style={{ color: "white", fontSize: "12px" }}>React</p>
+            </div>
+            <div className="icons-and-names">
+              <i
+                className="fa-brands fa-square-js"
+                style={{ color: "yellow" }}
+              ></i>
+              <p style={{ color: "white", fontSize: "12px" }}>JavaScript</p>
+            </div>
+            <div className="icons-and-names">
+              <i className="fa-brands fa-html5" style={{ color: "orange" }}></i>
+              <p style={{ color: "white", fontSize: "12px" }}>HTML5</p>
+            </div>
+            <div className="icons-and-names">
+              <i
+                className="fa-brands fa-css3-alt"
+                style={{ color: "blue" }}
+              ></i>
+              <p style={{ color: "white", fontSize: "12px" }}>CSS3</p>
+            </div>
+            <div className="icons-and-names">
+              <i className="fa-solid fa-microchip" style={{ color: "red" }}></i>
+              <p style={{ color: "white", fontSize: "12px" }}>AI</p>
+            </div>
+            <div className="icons-and-names">
+              <i className="fa-brands fa-git-alt" style={{ color: "blue" }}></i>
+              <p style={{ color: "white", fontSize: "12px" }}>GIT</p>
+            </div>
+            <div className="icons-and-names">
+              <i
+                className="fa-brands fa-node-js"
+                style={{ color: "yellow" }}
+              ></i>
+              <p style={{ color: "white", fontSize: "12px" }}>Node JS</p>
+            </div>
+          </div>
         </div>
         <div className="skill-description">
           <p>

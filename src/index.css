@@ -407,6 +407,54 @@ body {
   border: none;
   cursor: pointer;
 }
+
+.tech-icons-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 60px;
+  margin: 15px 0;
+}
+
+.tech-icons {
+  display: flex;
+  align-items: center;
+  height: 10px;
+  gap: 20px;
+  position: absolute;
+  white-space: nowrap;
+  animation: scrollTechIconsSeamless 15s linear infinite;
+}
+
+.tech-icons i {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+@keyframes scrollTechIconsSeamless {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.icons-and-names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-and-names p {
+  font-family: "Inter", sans-serif;
+}
 /****************************************************/
 /* Hover animations */
 
@@ -433,5 +481,170 @@ body {
 @media (max-width: 767px) {
   .container {
     width: 348px !important;
+  }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 575.98px) {
+  .container {
+    width: 95vw;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+/* Small Devices (Landscape Phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    width: 90vw;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    width: 85vw;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    width: 350px;
+  }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1200px) {
+  .container {
+    width: 350px;
+  }
+}
+
+/* iPhone Specific */
+@media (max-width: 320px) {
+  /* iPhone 5/SE */
+  .container {
+    width: 300px;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  /* iPhone 6/7/8/X */
+  .container {
+    width: 320px;
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 414px) {
+  /* iPhone 6/7/8 Plus */
+  .container {
+    width: 340px;
+    max-width: 340px;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 480px) {
+  /* Larger phones */
+  .container {
+    width: 350px;
+    max-width: 350px;
+  }
+}
+
+/* Tablet Specific */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* iPad */
+  .container {
+    width: 350px;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* iPad Portrait */
+  .container {
+    width: 350px;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* iPad Landscape */
+  .container {
+    width: 350px;
+    max-width: 350px;
+  }
+}
+
+/* Foldable Devices */
+@media (max-width: 280px) {
+  /* Galaxy Fold */
+  .container {
+    width: 260px;
+    max-width: 260px;
+  }
+}
+
+/* Height-based queries */
+@media (max-height: 600px) {
+  /* Short screens */
+  .container {
+    height: 500px;
+  }
+}
+
+@media (max-height: 400px) and (orientation: landscape) {
+  /* Landscape mobile */
+  .container {
+    height: 350px;
+    width: 300px;
+  }
+}
+
+/* Combined queries for very small screens */
+@media (max-width: 360px) {
+  .container {
+    width: 95vw;
+    max-width: 320px;
+  }
+}
+
+/* For extremely small screens */
+@media (max-width: 300px) {
+  .container {
+    width: 280px;
+    max-width: 280px;
+    padding: 8px;
+  }
+}
+
+/* Ensure wrapper adapts to container changes */
+@media (max-width: 767px) {
+  .wrapper::before,
+  .wrapper::after {
+    flex: 0 0 10px; /* Reduce spacing on mobile */
+  }
+}
+
+/* Adjust padding on very small screens */
+@media (max-width: 320px) {
+  .container {
+    padding: 8px;
+  }
+
+  .profilePicture {
+    height: 100px;
+  }
+
+  .profileimage {
+    height: 85px;
+    width: 85px;
   }
 }
