@@ -14,7 +14,7 @@ function App() {
   const [profilePicVisible, setProfilePicVisible] = useState(false);
 
   const handleShowProfilePic = () => {
-    setProfilePicVisible(true);
+    setProfilePicVisible((prev) => !prev);
   };
 
   const handleCloseProfilePic = () => {
