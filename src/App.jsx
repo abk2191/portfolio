@@ -41,14 +41,27 @@ function App() {
       title: "Tic-Tac-Toe Game (React)",
       description: (
         <>
-          built this interactive Tic-Tac-Toe game using React with functional
-          components and hooks for state management. The game logic is powered
-          by JavaScript that tracks moves, validates wins across all possible
-          combinations, and enables an undo feature. For styling, I used CSS3
-          with gradient backgrounds, flexbox layout, and glassmorphism effects
-          to create a modern visual design. The app is enhanced with
-          react-confetti for victory celebrations and HTML5 Audio API for sound
-          effects, all bundled with Vite for optimal development and
+          Built this interactive Tic-Tac-Toe game using{" "}
+          <strong style={{ color: "white" }}>
+            React with functional components
+          </strong>{" "}
+          and hooks for state management. The game logic is powered by
+          JavaScript that{" "}
+          <strong style={{ color: "white" }}>
+            tracks moves, validates wins across all possible combinations, and
+            enables an undo feature.
+          </strong>{" "}
+          For styling, I used{" "}
+          <strong style={{ color: "white" }}>
+            CSS3 with gradient backgrounds, flexbox layout, and glassmorphism
+            effects
+          </strong>{" "}
+          to create a modern visual design. The app is{" "}
+          <strong style={{ color: "white" }}>
+            enhanced with react-confetti for victory celebrations and HTML5
+            Audio API
+          </strong>{" "}
+          for sound effects, all bundled with Vite for optimal development and
           performance.
         </>
       ),
