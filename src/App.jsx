@@ -184,6 +184,25 @@ function App() {
       codeUrl: "https://github.com/abk2191/Weather-Report",
       liveUrl: "https://abk2191.github.io/Weather-Report/",
     },
+    {
+      id: 6,
+      title: "Tic-Tac-Toe Game (React)",
+      description: (
+        <>
+          built this interactive Tic-Tac-Toe game using React with functional
+          components and hooks for state management. The game logic is powered
+          by JavaScript that tracks moves, validates wins across all possible
+          combinations, and enables an undo feature. For styling, I used CSS3
+          with gradient backgrounds, flexbox layout, and glassmorphism effects
+          to create a modern visual design. The app is enhanced with
+          react-confetti for victory celebrations and HTML5 Audio API for sound
+          effects, all bundled with Vite for optimal development and
+          performance.
+        </>
+      ),
+      codeUrl: "https://github.com/abk2191/tic-tac-toe",
+      liveUrl: "https://abk2191.github.io/tic-tac-toe/",
+    },
   ];
 
   const handleShowCode = (codeUrl) => {
