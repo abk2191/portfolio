@@ -38,23 +38,22 @@ function App() {
   const projects = [
     {
       id: 1,
-      title: "Wordle Game",
+      title: "Tic-Tac-Toe Game (React)",
       description: (
         <>
-          I built a Wordle clone using{" "}
-          <strong style={{ color: "white" }}>vanilla JavaScript</strong> with a
-          6x5 grid structure and keyboard input. The game logic validates
-          guesses against a word dictionary and provides color-coded feedback
-          (green/yellow/gray). I implemented keyboard event handling for user
-          input and <strong style={{ color: "white" }}>local storage</strong> to
-          track game statistics. The entire game features real-time validation,
-          win/lose conditions, and a{" "}
-          <strong style={{ color: "white" }}>responsive UI</strong> without any
-          external libraries.
+          built this interactive Tic-Tac-Toe game using React with functional
+          components and hooks for state management. The game logic is powered
+          by JavaScript that tracks moves, validates wins across all possible
+          combinations, and enables an undo feature. For styling, I used CSS3
+          with gradient backgrounds, flexbox layout, and glassmorphism effects
+          to create a modern visual design. The app is enhanced with
+          react-confetti for victory celebrations and HTML5 Audio API for sound
+          effects, all bundled with Vite for optimal development and
+          performance.
         </>
       ),
-      codeUrl: "https://github.com/abk2191/wordle",
-      liveUrl: "https://abk2191.github.io/wordle/",
+      codeUrl: "https://github.com/abk2191/tic-tac-toe",
+      liveUrl: "https://abk2191.github.io/tic-tac-toe/",
     },
     {
       id: 2,
@@ -186,22 +185,23 @@ function App() {
     },
     {
       id: 6,
-      title: "Tic-Tac-Toe Game (React)",
+      title: "Wordle Game",
       description: (
         <>
-          built this interactive Tic-Tac-Toe game using React with functional
-          components and hooks for state management. The game logic is powered
-          by JavaScript that tracks moves, validates wins across all possible
-          combinations, and enables an undo feature. For styling, I used CSS3
-          with gradient backgrounds, flexbox layout, and glassmorphism effects
-          to create a modern visual design. The app is enhanced with
-          react-confetti for victory celebrations and HTML5 Audio API for sound
-          effects, all bundled with Vite for optimal development and
-          performance.
+          I built a Wordle clone using{" "}
+          <strong style={{ color: "white" }}>vanilla JavaScript</strong> with a
+          6x5 grid structure and keyboard input. The game logic validates
+          guesses against a word dictionary and provides color-coded feedback
+          (green/yellow/gray). I implemented keyboard event handling for user
+          input and <strong style={{ color: "white" }}>local storage</strong> to
+          track game statistics. The entire game features real-time validation,
+          win/lose conditions, and a{" "}
+          <strong style={{ color: "white" }}>responsive UI</strong> without any
+          external libraries.
         </>
       ),
-      codeUrl: "https://github.com/abk2191/tic-tac-toe",
-      liveUrl: "https://abk2191.github.io/tic-tac-toe/",
+      codeUrl: "https://github.com/abk2191/wordle",
+      liveUrl: "https://abk2191.github.io/wordle/",
     },
   ];
 
