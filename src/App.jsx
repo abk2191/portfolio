@@ -65,8 +65,8 @@ function App() {
           performance.
         </>
       ),
-      codeUrl: "https://github.com/abk2191/tic-tac-toe",
-      liveUrl: "https://abk2191.github.io/tic-tac-toe/",
+      codeUrl: "https://github.com/abk2191/tic-tac-toe-ai",
+      liveUrl: "https://abk2191.github.io/tic-tac-toe-ai/",
     },
     {
       id: 2,
