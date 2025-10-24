@@ -122,8 +122,8 @@ function App() {
           transitions."
         </>
       ),
-      codeUrl: "https://github.com/abk2191/todoapp",
-      liveUrl: "https://abk2191.github.io/todoapp/",
+      codeUrl: "https://github.com/abk2191/todoapp-updated",
+      liveUrl: "https://abk2191.github.io/todoapp-updated/",
     },
     {
       id: 4,
