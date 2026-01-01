@@ -41,42 +41,21 @@ function Maincard({ handleFollow, handleSendMessage, handleShowProfilePic }) {
             ></i>
             Name: Abhishek Kabi
           </p>
-          <p>
-            <i
-              className="fa-solid fa-cake-candles"
-              style={{ fontSize: "18px", padding: "6px", color: "magenta" }}
-            ></i>
-            DOB: 21/12/1991
-          </p>
 
-          <p>
-            <i
-              className="fa-solid fa-location-dot"
-              style={{ fontSize: "18px", padding: "6px", color: "red" }}
-            ></i>
-            Lives in: Bangalore, Karnataka
-          </p>
-          <p>
-            <i
-              className="fa-solid fa-square-phone"
-              style={{ fontSize: "18px", padding: "6px", color: "green" }}
-            ></i>
-            Mobile: +919332522166
-          </p>
           <p>
             <i
               className="fa-solid fa-envelope"
               style={{ fontSize: "18px", padding: "6px", color: "lightgreen" }}
             ></i>
-            Email: abhishek.kabi.21@gmail.com
+            Contact: abhishek.kabi.21@gmail.com
           </p>
           <p>
             <i
               className="fa-solid fa-briefcase"
               style={{ fontSize: "18px", padding: "6px", color: "brown" }}
             ></i>
-            Services: Full-Stack developer | UI/UX Designer | Websites/Apps |
-            Tech Support
+            Services: Full Stack Developer | React.js & Tailwind CSS |
+            UI-focused AI-assisted Product Builder
           </p>
           <hr
             style={{
